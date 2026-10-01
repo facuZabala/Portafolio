@@ -43,3 +43,45 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 }
+
+// Arreglo de información de tus proyectos
+const proyectos = [
+    {
+        titulo: "Sistema Administrativo para Sindicato",
+        descripcion: "Aplicación web completa diseñada para la gestión y administración de afiliados, cuotas y reportes administrativos. Desarrollada con Node.js, Express y base de datos SQL.",
+        imagen: "img/proyecto1.jpg",
+        github: "https://github.com/tu-usuario/sistema-sindicato",
+        galeria: "#"
+    },
+    {
+        titulo: "Página Web Institucional",
+        descripcion: "Sitio web moderno y responsivo para empresa local. Construido con HTML5, CSS3, JavaScript e integración de formulario de contacto con PHP.",
+        imagen: "img/proyecto2.jpg",
+        github: "https://github.com/tu-usuario/pagina-web",
+        galeria: "#"
+    },
+    {
+        titulo: "Aplicación de Gestión Fullstack",
+        descripcion: "Plataforma desarrollada con Next.js y React en el frontend y PostgreSQL para la base de datos. Cuenta con autenticación de usuarios y panel de control.",
+        imagen: "img/proyecto3.jpg",
+        github: "https://github.com/tu-usuario/app-gestion",
+        galeria: "#"
+    }
+];
+
+// Función para cambiar el proyecto activo
+function seleccionarProyecto(index) {
+    const proyecto = proyectos[index];
+
+    // Actualizar elementos de la tarjeta principal
+    document.getElementById("proyecto-img").src = proyecto.imagen;
+    document.getElementById("proyecto-titulo").textContent = proyecto.titulo;
+    document.getElementById("proyecto-desc").textContent = proyecto.descripcion;
+    document.getElementById("proyecto-github").href = proyecto.github;
+    document.getElementById("proyecto-galeria").href = proyecto.galeria;
+
+    // Actualizar clase activa en las miniaturas
+    const miniaturas = document.querySelectorAll(".miniatura");
+    miniaturas.forEach((min) => min.classList.remove("activo"));
+    miniaturas[index].classList.add("activo");
+}

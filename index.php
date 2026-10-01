@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
@@ -32,233 +33,48 @@
     </div>
 
     <!-- INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img\WhatsApp Image 2023-12-11 at 02.25.24.jpeg" alt="">
-            </div>
-            <h1>Rebollo Facundo</h1>
-            <h2>Licenciado en Sistemas de la Informacion</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/facundogabriel.rebollo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://wa.me/543794324325" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://github.com/facuZabala" target="_blank"><i class="fa-brands fa-github"></i></a>
 
-            </div>
-        </div>
-    </section>
 
     <!-- SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, soy Rebollo Facundo.</span> Un apasionado Analista en Sistemas de la Información y Programador Junior. Mi enfoque se centra en transformar desafíos en soluciones creativas y eficientes.
-                Con sólidos conocimientos técnicos y una actitud orientada al aprendizaje, estoy comprometido con el crecimiento continuo. Mi experiencia incluye una pagina web para descargar unidades de estudio de la facultad UNNE, donde pude aplicar mis habilidades en Backend.
-                Aunque soy relativamente nuevo en el campo, mi entusiasmo y dedicación para enfrentar nuevos desafíos son evidentes. Estoy emocionado por la oportunidad de contribuir y aprender en entornos de desarrollo dinámicos.
-                ¡Gracias por explorar mi perfil!</p>
-
-            <div class="fila">
-                <!-- Datos Personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            29-08-2001
-                        </li>
-                        <li>
-                            <strong>Telefono</strong>
-                            +54 3794 324325
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            facu21gabriel@gmail.com
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>VideoJuegos</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>Musica</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>Leer</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-volleyball"></i>
-                            <span>VolleyBall</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>Viajar</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-swimming"></i>
-                            <span>Natacion</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-clapperboard"></i>
-                            <span>Peliculas</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-chess-knight"></i>
-                            <span>Ajedrez</span>
-                        </div>
-                    </div>
-
-                </div>
+    <section id="sobre-mi" class="seccion-sobre-mi">
+        <div class="container sobre-mi-grid">
+            <!-- Foto a la izquierda -->
+            <div class="col-izquierda">
+                <img src="img/tu-foto-perfil.jpeg" alt="Foto de perfil" class="foto-perfil">
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
 
-            </button>
-        </div>
-    </section>
+            <!-- Información a la derecha -->
+            <div class="col-derecha">
+                <h2>Sobre Mí</h2>
+                <p>
+                    Técnico Superior en Desarrollo de Software y estudiante universitario apasionado por la tecnología. 
+                    Tengo experiencia desarrollando proyectos web fullstack y soluciones de software administrativo, 
+                    además de contar con certificación CCNA de CISCO en redes.
+                </p>
 
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-        <div class="contenido-seccion">
-            <h2>Habilidades</h2>
-            <div class="fila">
-                <!-- Habilidades Tecnicas -->
-                <div class="col">
-                    <h3>Habilidades Tecnicas</h3>
-                    <div class="skill">
-                        <span>JavaScript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>79%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>PHP</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>C#</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>MySQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQLServer</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>87%</span>
-                            </div>
-                        </div>
-                    </div>
+                <h3>Habilidades Técnicas</h3>
+                <div class="logos-habilidades">
+                    <!-- Puedes usar etiquetas <img> con SVGs o fuentes de iconos como Devicon -->
+                    <div class="skill-item" title="Node.js"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                    <div class="skill-item" title="Next.js"><i class="devicon-nextjs-original colored"></i><span>Next.js</span></div>
+                    <div class="skill-item" title="React.js"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="skill-item" title="JavaScript"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                    <div class="skill-item" title="Java"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                    <div class="skill-item" title="PHP"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                    <div class="skill-item" title="PostgreSQL"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                    <div class="skill-item" title="MySQL"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                    <div class="skill-item" title="SQL Server"><i class="devicon-microsoftsqlserver-plain colored"></i><span>SQL Server</span></div>
+                    <div class="skill-item" title="Redes Cisco"><i class="devicon-cisco-plain colored"></i><span>Cisco CCNA</span></div>
                 </div>
 
-                <!-- Habilidades Profesionales -->
-                <div class="col">
-                    <h3>Habilidades Profesionales</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Liderazgo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>78%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>68%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Project Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Adaptabilidad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Currículum al final -->
+                <div class="seccion-cv">
+                    <a href="ruta-a-tu-cv.pdf" download class="btn-cv">Descargar Curriculum (PDF)</a>
                 </div>
             </div>
         </div>
-
     </section>
+
 
     <!-- CURRICULUM -->
     <section id="curriculum" class="curriculum">
@@ -341,41 +157,44 @@
     </section>
 
     <!-- PORTAFOLIO -->
-    <section id="portafolio" class="portafolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img\Captura de pantalla 2023-12-11 230422.png" alt="">
-                    <div class="overlay">
-                        <h3>Descarga de Unidades UNNE</h3>
-                        <p>Pagina web para descargar las unidades de estudio de las materias de la UNNE</p>
+    <section id="proyectos" class="seccion-proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+
+            <!-- Tarjeta Grande Destacada -->
+            <div class="tarjeta-destacada">
+                <div class="img-destacada-container">
+                    <img id="proyecto-img" src="img/proyecto1.jpg" alt="Imagen del proyecto destacado">
+                </div>
+                <div class="info-destacada">
+                    <h3 id="proyecto-titulo">Sistema Administrativo para Sindicato</h3>
+                    <p id="proyecto-desc">
+                        Aplicación web completa diseñada para la gestión y administración de afiliados, cuotas y reportes administrativos. Desarrollada con Node.js y base de datos SQL.
+                    </p>
+                    <div class="botones-proyecto">
+                        <a id="proyecto-github" href="https://github.com/tu-usuario/proyecto" target="_blank" class="btn btn-github">Ver GitHub</a>
+                        <a id="proyecto-galeria" href="#" class="btn btn-imagenes">Ver Más Imágenes</a>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img\portafolio1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Fauna y Flora de Crrientes</h3>
-                        <p>Con mi grupo de la Tecnicatura realizamos una pagina Web sobre la Flora y Fauna de nuestra provincia</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img\GenSys.jpeg" alt="">
-                    <div class="overlay">
-                        <h3>Gestion de Productos Empresarial</h3>
-                        <p>Una Aplicacion de pantalla para gestionar los productos, usuarios, reportes, transacciones, etc.</p>
-                    </div>
             </div>
-            <div class="proyecto">
-                <img src="img\que-se-necesita-estudiar-para-ser-programador-scaled-1200x900.jpg" alt="">
-                <div class="overlay">
-                    <h3>Futuros Proyectos</h3>
-                    <p>Trabajando en Proyectos Futuros</p>
+
+            <!-- Carrusel / Miniaturas de Proyectos -->
+            <div class="carrusel-contenedor">
+                <p class="instruccion-carrusel">Haz clic en un proyecto para verlo en detalle:</p>
+                <div class="carrusel-miniaturas">
+                    <div class="miniatura activo" onclick="seleccionarProyecto(0)">
+                        <img src="img/proyecto1.jpg" alt="Sistema Sindicato">
+                    </div>
+                    <div class="miniatura" onclick="seleccionarProyecto(1)">
+                        <img src="img/proyecto2.jpg" alt="Página Web Institucional">
+                    </div>
+                    <div class="miniatura" onclick="seleccionarProyecto(2)">
+                        <img src="img/proyecto3.jpg" alt="App Web React/Node">
+                    </div>
+                    <!-- Agrega más miniaturas según necesites -->
                 </div>
             </div>
         </div>
-    </div>
-
     </section>
 
     <!-- CONTACTO -->

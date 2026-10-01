@@ -729,3 +729,250 @@ footer .arriba{
     }
 
 }
+
+/* probando */
+
+/* --- RESET BÁSICO Y ESTILOS GENERALES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- SECCIÓN SOBRE MÍ --- */
+.seccion-sobre-mi {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.sobre-mi-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.col-izquierda {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+.col-derecha {
+    flex: 2;
+    min-width: 300px;
+}
+
+.col-derecha h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.col-derecha p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.col-derecha h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Logos de Habilidades */
+.logos-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem; /* Tamaño del ícono */
+    width: 70px;
+    transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item span {
+    font-size: 0.75rem;
+    margin-top: 5px;
+    color: #666;
+    font-weight: 600;
+}
+
+/* Botón Currículum */
+.btn-cv {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2b2b2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #000;
+}
+
+/* --- SECCIÓN PROYECTOS --- */
+.seccion-proyectos {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.seccion-proyectos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+/* Tarjeta Grande Destacada */
+.tarjeta-destacada {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+}
+
+.img-destacada-container {
+    flex: 1.2;
+    min-width: 300px;
+    background-color: #000;
+}
+
+.img-destacada-container img {
+    width: 100%;
+    height: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.info-destacada {
+    flex: 1;
+    min-width: 300px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-destacada h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.info-destacada p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.botones-proyecto {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-github {
+    background-color: #24292e;
+    color: #fff;
+}
+
+.btn-imagenes {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Carrusel de Miniaturas */
+.carrusel-contenedor {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.instruccion-carrusel {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.carrusel-miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.miniatura {
+    width: 120px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.miniatura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.miniatura:hover {
+    opacity: 0.8;
+}
+
+.miniatura.activo {
+    opacity: 1;
+    border-color: #0066cc;
+    transform: scale(1.05);
+}
